@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import About from '../components/About'
-import Experience from '../components/Experience'
+import Experience from '../components/ExperienceSection'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 
