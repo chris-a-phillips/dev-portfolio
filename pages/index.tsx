@@ -1,18 +1,21 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from '../components/Header'
-import styles from '../styles/Home.module.css'
+import Hero from '../components/Hero'
 
 export default function Home() {
     return (
-        <div>
-        <Head>
-            <title>Chris Phillips | Software Engineer</title>
-        </Head>
+        <div className='bg-sky-800 text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+            <Head>
+                <title>Chris Phillips | Software Engineer</title>
+            </Head>
 
-        <Header />
+            <Header />
 
             {/* TODO: HERO */}
+            <section id='hero' className='snap-center'>
+                <Hero />
+
+            </section>
 
             {/* TODO: ABOUT */}
 
