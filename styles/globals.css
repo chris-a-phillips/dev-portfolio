@@ -7,4 +7,7 @@
         @apply px-6 py-2 border border-[#4a605a] rounded-full uppercase text-sm p-10 bg-sky-800
         tracking-widest text-[#F4B942] transition-all hover:border-[#97D8C4]/40 hover:text-[#F4B942]/40
     }
+    .sectionTitle {
+        @apply absolute top-36 uppercase tracking-[20px] text-[#F4B942] text-2xl
+    }
 }

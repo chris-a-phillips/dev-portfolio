@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import About from '../components/About'
+import Experience from '../components/Experience'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 
@@ -8,18 +10,16 @@ export default function Home() {
             <Head>
                 <title>Chris Phillips | Software Engineer</title>
             </Head>
-
             <Header />
-
-            {/* TODO: HERO */}
             <section id='hero' className='snap-center'>
                 <Hero />
-
             </section>
-
-            {/* TODO: ABOUT */}
-
-            {/* TODO: EXPERIENCE */}
+            <section id='about' className='snap-start'>
+                <About />
+            </section>
+            <section id='experience' className='snap-center'>
+                <Experience />
+            </section>
 
             {/* TODO: SKILLS */}
 
