@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import About from '../components/About'
+import Contact from '../components/Contact'
 import Experience from '../components/ExperienceSection'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
@@ -28,9 +29,9 @@ export default function Home() {
             <section id='projects' className='snap-start'>
                 <Projects />
             </section>
-
-            {/* TODO: CONTACT */}
-
+            <section id='contact' className='snap-start'>
+                <Contact />
+            </section>
         </div>
     )
 }
