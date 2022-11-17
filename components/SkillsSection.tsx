@@ -24,18 +24,18 @@ const Skills = (props: Props) => {
                 Hover over a skill for amount of experience
             </h3>
             <div className='grid grid-cols-4 gap-5'>
+                <SkillIcon directionLeft={true}/>
+                <SkillIcon directionLeft={true}/>
+                <SkillIcon directionLeft={true}/>
+                <SkillIcon directionLeft={true}/>
                 <SkillIcon />
                 <SkillIcon />
                 <SkillIcon />
                 <SkillIcon />
-                <SkillIcon />
-                <SkillIcon />
-                <SkillIcon />
-                <SkillIcon />
-                <SkillIcon />
-                <SkillIcon />
-                <SkillIcon />
-                <SkillIcon />
+                <SkillIcon directionLeft={true}/>
+                <SkillIcon directionLeft={true}/>
+                <SkillIcon directionLeft={true}/>
+                <SkillIcon directionLeft={true}/>
                 <SkillIcon />
                 <SkillIcon />
                 <SkillIcon />
