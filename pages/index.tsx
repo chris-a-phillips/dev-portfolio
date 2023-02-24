@@ -9,7 +9,8 @@ import Projects from '../components/Projects'
 import Skills from '../components/SkillsSection'
 import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 
-
+// TODO: ADD FOOTER SECTION
+// TODO: ADD RESUME LINK
 export default function Home() {
     return (
         <div className='bg-sky-800 text-white h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll overflow-x-hidden z-0
