@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 import SoftwareEngineer from './SoftwareEngineer';
+import { motion } from 'framer-motion'
+
 
 type Props = {}
 
@@ -39,8 +41,21 @@ const Hero = (props: Props) => {
                 <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
                     {delay ? (
                         <span>
-                            {text}
-                            <Cursor cursorColor='#F4B942' cursorStyle='▋'/>
+                            <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    scale: 0.5
+                                }}
+                                animate={{
+                                    opacity: 1,
+                                }}
+                                transition={{
+                                    duration: 2.5
+                                }}
+                                >
+                                {text}
+                                <Cursor cursorColor='#F4B942' cursorStyle='▋'/>
+                            </motion.div>
                         </span>
 
                     ) : <span className='text-sky-800'>placeholder</span>}
