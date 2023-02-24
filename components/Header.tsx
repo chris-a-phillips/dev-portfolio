@@ -2,6 +2,7 @@ import React from 'react'
 import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
 import { BsLinkedin } from 'react-icons/bs';
 import { motion } from 'framer-motion'
+import Link from 'next/link';
 
 type Props = {}
 
@@ -26,24 +27,27 @@ const Header = (props: Props) => {
                     <AiFillGithub />
                     <BsLinkedin />
             </motion.div>
-            <motion.div
-                initial={{
-                    x: 500,
-                    opacity: 0,
-                    scale: 0.5
-                }}
-                animate={{
-                    x: 0,
-                    opacity: 1,
-                    scale: 1.5
-                }}
-                transition={{
-                    duration: 1.5
-                }}
-                className='flex flex-row space-x-2 items-start text-teal-500 cursor-pointer'>
-                    <AiOutlineMail />
-                    <p className='uppercase hidden md:inline-flex text-sm text-teal-400'>Contact Me</p>
-            </motion.div>
+            <Link
+                href='#contact'>
+                <motion.div
+                    initial={{
+                        x: 500,
+                        opacity: 0,
+                        scale: 0.5
+                    }}
+                    animate={{
+                        x: 0,
+                        opacity: 1,
+                        scale: 1.5
+                    }}
+                    transition={{
+                        duration: 1.5
+                    }}
+                    className='flex flex-row space-x-2 items-start text-teal-500 cursor-pointer'>
+                        <AiOutlineMail />
+                        <p className='uppercase hidden md:inline-flex text-sm text-teal-400'>Contact Me</p>
+                </motion.div>
+            </Link>
         </header>
     )
 }
