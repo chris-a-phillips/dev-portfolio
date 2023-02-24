@@ -9,7 +9,8 @@ import Skills from '../components/SkillsSection'
 
 export default function Home() {
     return (
-        <div className='bg-sky-800 text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+        <div className='bg-sky-800 text-white h-screen snap-y snap-mandatory overflow-scroll overflow-y-scroll overflow-x-hidden z-0
+        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#97D8C4]'>
             <Head>
                 <title>Chris Phillips | Software Engineer</title>
             </Head>
@@ -20,7 +21,7 @@ export default function Home() {
             <section id='about' className='snap-start'>
                 <About />
             </section>
-            <section id='experience' className='snap-center'>
+            <section id='experience' className='snap-start'>
                 <Experience />
             </section>
             <section id='skills' className='snap-start'>
