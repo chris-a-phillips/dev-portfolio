@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 type Props = {}
+// TODO: turn the below code into a map
 
 const SoftwareEngineer = (props: Props) => {
     return (
@@ -23,7 +24,7 @@ const SoftwareEngineer = (props: Props) => {
                     duration: 1
                 }}
                 className='inline-block'>
-                S
+                C
             </motion.div>
             <motion.div
                 initial={{
@@ -42,7 +43,7 @@ const SoftwareEngineer = (props: Props) => {
                     duration: 1.2
                 }}
                 className='inline-block'>
-                o
+                h
             </motion.div>
             <motion.div
                 initial={{
@@ -61,7 +62,7 @@ const SoftwareEngineer = (props: Props) => {
                     duration: 1.4
                 }}
                 className='inline-block'>
-                f
+                r
             </motion.div>
             <motion.div
                 initial={{
@@ -80,7 +81,7 @@ const SoftwareEngineer = (props: Props) => {
                     duration: 1.6
                 }}
                 className='inline-block'>
-                t
+                i
             </motion.div>
             <motion.div
                 initial={{
@@ -99,64 +100,7 @@ const SoftwareEngineer = (props: Props) => {
                     duration: 1.8
                 }}
                 className='inline-block'>
-                w
-            </motion.div>
-            <motion.div
-                initial={{
-                    x: Math.random()*1000,
-                    y: Math.random()*1000,
-                    opacity: 0,
-                    scale: 4
-                }}
-                animate={{
-                    x: 0,
-                    y: 0,
-                    opacity: 1,
-                    scale: 2
-                }}
-                transition={{
-                    duration: 2
-                }}
-                className='inline-block'>
-                a
-            </motion.div>
-            <motion.div
-                initial={{
-                    x: Math.random()*1000,
-                    y: Math.random()*1000,
-                    opacity: 0,
-                    scale: 4
-                }}
-                animate={{
-                    x: 0,
-                    y: 0,
-                    opacity: 1,
-                    scale: 2
-                }}
-                transition={{
-                    duration: 2.2
-                }}
-                className='inline-block'>
-                r
-            </motion.div>
-            <motion.div
-                initial={{
-                    x: Math.random()*1000,
-                    y: Math.random()*1000,
-                    opacity: 0,
-                    scale: 4
-                }}
-                animate={{
-                    x: 0,
-                    y: 0,
-                    opacity: 1,
-                    scale: 2
-                }}
-                transition={{
-                    duration: 2.4
-                }}
-                className='inline-block'>
-                e
+                s
             </motion.div>
             <motion.div
                 initial={{
@@ -191,10 +135,48 @@ const SoftwareEngineer = (props: Props) => {
                     scale: 2
                 }}
                 transition={{
+                    duration: 2.2
+                }}
+                className='inline-block'>
+                P
+            </motion.div>
+            <motion.div
+                initial={{
+                    x: Math.random()*1000,
+                    y: Math.random()*1000,
+                    opacity: 0,
+                    scale: 4
+                }}
+                animate={{
+                    x: 0,
+                    y: 0,
+                    opacity: 1,
+                    scale: 2
+                }}
+                transition={{
+                    duration: 2.4
+                }}
+                className='inline-block'>
+                h
+            </motion.div>
+            <motion.div
+                initial={{
+                    x: Math.random()*1000,
+                    y: Math.random()*1000,
+                    opacity: 0,
+                    scale: 4
+                }}
+                animate={{
+                    x: 0,
+                    y: 0,
+                    opacity: 1,
+                    scale: 2
+                }}
+                transition={{
                     duration: 2.8
                 }}
                 className='inline-block'>
-                e
+                i
             </motion.div>
             <motion.div
                 initial={{
@@ -213,7 +195,7 @@ const SoftwareEngineer = (props: Props) => {
                     duration: 3
                 }}
                 className='inline-block'>
-                n
+                l
             </motion.div>
             <motion.div
                 initial={{
@@ -232,7 +214,7 @@ const SoftwareEngineer = (props: Props) => {
                     duration: 3.2
                 }}
                 className='inline-block'>
-                g
+                l
             </motion.div>
             <motion.div
                 initial={{
@@ -267,29 +249,10 @@ const SoftwareEngineer = (props: Props) => {
                     scale: 2
                 }}
                 transition={{
-                    duration: 3.6
-                }}
-                className='inline-block'>
-                n
-            </motion.div>
-            <motion.div
-                initial={{
-                    x: Math.random()*1000,
-                    y: Math.random()*1000,
-                    opacity: 0,
-                    scale: 4
-                }}
-                animate={{
-                    x: 0,
-                    y: 0,
-                    opacity: 1,
-                    scale: 2
-                }}
-                transition={{
                     duration: 3.8
                 }}
                 className='inline-block'>
-                e
+                p
             </motion.div>
             <motion.div
                 initial={{
@@ -308,26 +271,7 @@ const SoftwareEngineer = (props: Props) => {
                     duration: 4
                 }}
                 className='inline-block'>
-                e
-            </motion.div>
-            <motion.div
-                initial={{
-                    x: Math.random()*1000,
-                    y: Math.random()*1000,
-                    opacity: 0,
-                    scale: 4
-                }}
-                animate={{
-                    x: 0,
-                    y: 0,
-                    opacity: 1,
-                    scale: 2
-                }}
-                transition={{
-                    duration: 4.2
-                }}
-                className='inline-block'>
-                r
+                s
             </motion.div>
         </div>
     )

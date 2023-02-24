@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React, { useState } from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
-import SoftwareEngineer from './SoftwareEngineer';
+import FullName from './FullName';
 import { motion } from 'framer-motion'
 
 
@@ -12,9 +12,9 @@ const Hero = (props: Props) => {
     const [delay, setDelay] = useState(false)
     const [text] = useTypewriter({
         words: [
-            'thing 1',
-            'Chris Phillips',
-            'thing 2'
+            'adjective 1',
+            'adjective 2',
+            'adjective 3',
         ],
         loop: true,
         delaySpeed: 1500
@@ -36,7 +36,7 @@ const Hero = (props: Props) => {
             />
             <div className='z-20'>
                 <h2>
-                    <SoftwareEngineer />
+                    <FullName />
                 </h2>
                 <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
                     {delay ? (
