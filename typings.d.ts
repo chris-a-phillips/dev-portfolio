@@ -1,4 +1,4 @@
-export interface Experience {
+export interface WorkExperience {
     companyName: string;
     jobTitle: string;
     jobDuties: string[];
