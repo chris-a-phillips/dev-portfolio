@@ -9,6 +9,7 @@ interface Logo {
 export interface WorkExperience {
     _id: number;
     companyName: string;
+    companyLogo: Logo;
     jobTitle: string;
     jobDuties: string[];
     startDate: string;
