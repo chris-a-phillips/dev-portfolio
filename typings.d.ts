@@ -14,7 +14,7 @@ export interface WorkExperience {
     jobDuties: string[];
     startDate: string;
     endDate: string;
-    technologies: Image[];
+    technologies: Logo[];
 }
 
 

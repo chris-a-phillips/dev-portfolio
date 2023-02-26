@@ -28,7 +28,7 @@ export const experienceData: WorkExperience[] = [
             },
             {
                 _id: 2,
-                icon: awsLogo,
+                logo: awsLogo,
                 alt: 'aws'
             }
         ],
@@ -53,7 +53,7 @@ export const experienceData: WorkExperience[] = [
             },
             {
                 _id: 2,
-                icon: awsLogo,
+                logo: awsLogo,
                 alt: 'aws'
             }
         ],
@@ -78,7 +78,7 @@ export const experienceData: WorkExperience[] = [
             },
             {
                 _id: 2,
-                icon: awsLogo,
+                logo: awsLogo,
                 alt: 'aws'
             }
         ],
