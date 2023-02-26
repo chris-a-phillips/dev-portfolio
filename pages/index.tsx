@@ -8,8 +8,9 @@ import Projects from '../components/Projects'
 import Skills from '../components/SkillsSection'
 import Footer from '../components/Footer'
 import { WorkExperience, Project} from '../typings'
-import { experienceData } from '../data/ExperienceData'
+import { experienceData } from '../data/ExperiencesData'
 import { projectData } from '../data/ProjectsData'
+import { skillData } from '../data/SkillsData'
 
 // TODO: ADD RESUME LINK
 
@@ -37,7 +38,7 @@ const Home = ({ experiences, projects }: Props) => {
                 <Experience experiences={experienceData}/>
             </section>
             <section id='skills' className='snap-start'>
-                <Skills />
+                <Skills skills={skillData}/>
             </section>
             <section id='projects' className='snap-start'>
                 <Projects projects={projectData}/>

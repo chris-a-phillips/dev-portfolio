@@ -27,3 +27,7 @@ export interface Project {
     technologies: Image;
 }
 
+export interface Skill {
+    name: string;
+    skillLogo: Logo;
+}

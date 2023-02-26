@@ -57,7 +57,7 @@ const ExperienceCard = ({ experience }: Props) => {
                 <p className='uppercase py-5 text-[#F4B942]'>
                     {experience.startDate} - {experience.endDate}
                 </p>
-                <ul className='list-disc space-y-4 ml-5 text-lg'>
+                <ul className='list-disc space-y-4 ml-5 text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#6B9AC4]'>
                     {experience.jobDuties.map((duty) => {
                         return(
                             <li>{duty}</li>
