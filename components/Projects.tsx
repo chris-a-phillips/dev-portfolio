@@ -2,10 +2,11 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Project } from '../typings'
 
-type Props = {}
+type Props = {
+    projects: Project[];
+}
 
-const Projects = (props: Props) => {
-    const projects = [1,2,3,4,5]
+const Projects = ({ projects }: Props) => {
 
     return (
         <motion.div

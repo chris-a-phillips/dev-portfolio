@@ -6,10 +6,11 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
 import Skills from '../components/SkillsSection'
-import { WorkExperience, Project} from '../typings'
 import Footer from '../components/Footer'
+import { WorkExperience, Project} from '../typings'
+import { experienceData } from '../data/ExperienceData'
+import { projectData } from '../data/ProjectsData'
 
-// TODO: ADD FOOTER SECTION
 // TODO: ADD RESUME LINK
 
 type Props = {
@@ -33,13 +34,13 @@ const Home = ({ experiences, projects }: Props) => {
                 <About />
             </section>
             <section id='experience' className='snap-start'>
-                <Experience />
+                <Experience experiences={experienceData}/>
             </section>
             <section id='skills' className='snap-start'>
                 <Skills />
             </section>
             <section id='projects' className='snap-start'>
-                <Projects />
+                <Projects projects={projectData}/>
             </section>
             <section id='contact' className='snap-start'>
                 <Contact />

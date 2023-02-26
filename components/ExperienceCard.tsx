@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import { Experience } from '../typings'
+import { WorkExperience } from '../typings'
+import Image from 'next/image'
 
-type Props = {}
+type Props = {
+    experience: WorkExperience
+}
 
-const ExperienceCard = (props: Props) => {
+const ExperienceCard = ({ experience }: Props) => {
     return (
         <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px]
             md:w-[600px] xl:w-[900px] snap-center bg-[#6B9AC4] hover:opacity-100 opacity-40
@@ -29,31 +32,32 @@ const ExperienceCard = (props: Props) => {
             />
             <div className='px-0 md:px-10'>
                 <h4 className='text-4-xl font-light'>
-                    Job Title
+                    {experience.jobTitle}
                 </h4>
                 <p className='font-bold text-2xl mt-1'>
-                    Company Name
+                    {experience.companyName}
                 </p>
                 <div className='flex space-x-2 my-2'>
-                    <div className='h-10 w-10 rounded-full'>
-                        {/* Tech used */}
-                    </div>
-                    <div className='h-10 w-10 rounded-full'>
-                        {/* Tech used */}
-                    </div>
-                    <div className='h-10 w-10 rounded-full'>
-                        {/* Tech used */}
-                    </div>
+                    {experience.technologies.map((technology) => {
+                        return(
+                            <Image
+                                className='h-16 w-16 rounded-full'
+                                key={technology._id}
+                                src={technology.logo}
+                                alt={technology.alt}
+                            />
+                        )
+                    })}
                 </div>
                 <p className='uppercase py-5 text-[#F4B942]'>
-                    Dates
+                    {experience.startDate} - {experience.endDate}
                 </p>
                 <ul className='list-disc space-y-4 ml-5 text-lg'>
-                    <li>Summary Points</li>
-                    <li>Summary Points</li>
-                    <li>Summary Points</li>
-                    <li>Summary Points</li>
-                    <li>Summary Points</li>
+                    {experience.jobDuties.map((duty) => {
+                        return(
+                            <li>{duty}</li>
+                        )
+                    })}
                 </ul>
             </div>
         </article>
