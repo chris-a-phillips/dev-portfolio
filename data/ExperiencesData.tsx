@@ -1,10 +1,11 @@
 import { WorkExperience } from "../typings"
-import pythonLogo from '../public/static/python-logo.svg'
-import awsLogo from '../public/static/aws-logo.svg'
 import builtLogo from '../public/static/built-logo.svg'
 import workdayLogo from '../public/static/workday-logo.svg'
 import voloLogo from '../public/static/volo-logo.svg'
 import generalAssemblyLogo from '../public/static/general-assembly-logo.svg'
+
+import pythonLogo from '../public/static/python-logo.svg'
+import awsLogo from '../public/static/aws-logo.svg'
 
 
 export const experienceData: WorkExperience[] = [
@@ -103,7 +104,7 @@ export const experienceData: WorkExperience[] = [
             },
             {
                 _id: 2,
-                icon: awsLogo,
+                logo: awsLogo,
                 alt: 'aws'
             }
         ],

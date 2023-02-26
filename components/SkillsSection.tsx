@@ -27,22 +27,12 @@ const Skills = ({ skills }: Props) => {
                 Hover over a skill for amount of experience
             </h3>
             <div className='grid grid-cols-4 gap-5'>
-                {skills.slice(0, skills.length / 4).map((skill) => {
+                {skills.slice(0, skills.length / 2).map((skill) => {
                     return(
                         <SkillIcon skill={skill}/>
                     )
                 })}
-                {skills.slice(skills.length * 0.25, skills.length / 2).map((skill) => {
-                    return(
-                        <SkillIcon skill={skill} directionLeft={true}/>
-                        )
-                    })}
-                {skills.slice(skills.length / 2, skills.length * 0.75).map((skill) => {
-                    return(
-                        <SkillIcon skill={skill}/>
-                    )
-                })}
-                {skills.slice(skills.length * 0.75, skills.length).map((skill) => {
+                {skills.slice(skills.length / 2, skills.length).map((skill) => {
                     return(
                         <SkillIcon skill={skill} directionLeft={true}/>
                     )
