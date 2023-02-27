@@ -12,7 +12,14 @@ import { experienceData } from '../data/ExperiencesData'
 import { projectData } from '../data/ProjectsData'
 import { skillData } from '../data/SkillsData'
 
+// TODO: ADD OTHER TECHNOLOGIES
+// TODO: ADD PROJECTS
+// TODO: MAKE SURE ALL LINKS WORK
 // TODO: ADD RESUME LINK
+// TODO: ADD ACTUAL ADJECTIVES IN HERO SECTION
+// TODO: ADD SEPARATE PICTURE FOR ABOUT SECTION
+// TODO: FIX SECTION HEADER STYLING (THEY NEED TO BE LOWERED AND NOT IN SAME LEVEL AS HEADER LINK)
+// TODO: FIX MEDIA QUERY STYLING
 
 type Props = {
     experiences: WorkExperience[];
