@@ -1,10 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image';
-import { Skill } from '../typings';
+import { Logo } from '../typings';
 
 type Props = {
-    skill: Skill
+    skill: Logo
     directionLeft?: boolean;
 }
 
@@ -25,9 +25,9 @@ const SkillIcon = ({ skill, directionLeft }: Props) => {
         className='rounded-lg border border-[#6B9AC4] object-cover h-24 w-24 md:w-28 md:h-28 xl:w032 xl:h-32 filter group-hover:brightness-150 transition duration-300 ease-in-out'
         >
             <Image
-                key={skill.skillLogo._id}
-                src={skill.skillLogo.logo}
-                alt={skill.skillLogo.alt}
+                key={skill._id}
+                src={skill.image}
+                alt={skill.alt}
             />
         </motion.div>
         <div className='absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-out group-hover:bg-white h-24 w-24 md:w-28 md:h-28 xl:w032 xl:h-32 rounded-lg z-0'>

@@ -1,13 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import SkillIcon from './SkillIcon'
-import { Skill } from '../typings'
+import { Logo } from '../typings'
 
 type Props = {
-    skills: Skill[];
+    skills: Logo[];
 }
 
-const Skills = ({ skills }: Props) => {
+const SkillsSection = ({ skills }: Props) => {
     return (
         <motion.div
         initial={{
@@ -29,7 +29,7 @@ const Skills = ({ skills }: Props) => {
             <div className='grid grid-cols-4 gap-5'>
                 {skills.slice(0, skills.length / 2).map((skill) => {
                     return(
-                        <SkillIcon skill={skill}/>
+                        <SkillIcon skill={skill} directionLeft={true}/>
                     )
                 })}
                 {skills.slice(skills.length / 2, skills.length).map((skill) => {
@@ -42,4 +42,4 @@ const Skills = ({ skills }: Props) => {
     )
 }
 
-export default Skills
+export default SkillsSection

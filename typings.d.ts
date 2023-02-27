@@ -1,8 +1,8 @@
 import { IconType } from "react-icons";
 
-interface Logo {
+export interface Logo {
     _id: number;
-    logo: HTMLImageElement;
+    image: HTMLImageElement;
     alt: string;
 }
 
@@ -27,7 +27,6 @@ export interface Project {
     technologies: Image;
 }
 
-export interface Skill {
-    name: string;
-    skillLogo: Logo;
+export interface Technologies {
+    [key: string]: Logo
 }

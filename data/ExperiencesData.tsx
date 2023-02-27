@@ -1,11 +1,9 @@
 import { WorkExperience } from "../typings"
+import { technologies } from "./TechnologiesData"
 import builtLogo from '../public/static/built-logo.svg'
 import workdayLogo from '../public/static/workday-logo.svg'
 import voloLogo from '../public/static/volo-logo.svg'
 import generalAssemblyLogo from '../public/static/general-assembly-logo.svg'
-
-import pythonLogo from '../public/static/python-logo.svg'
-import awsLogo from '../public/static/aws-logo.svg'
 
 
 export const experienceData: WorkExperience[] = [
@@ -14,7 +12,7 @@ export const experienceData: WorkExperience[] = [
         companyName: 'Built Technologies',
         companyLogo: {
             _id: 1,
-            logo: builtLogo,
+            image: builtLogo,
             alt: 'Built'
         },
         jobTitle: 'Software Engineer',
@@ -22,16 +20,8 @@ export const experienceData: WorkExperience[] = [
         startDate: 'March 2022',
         endDate: 'current',
         technologies: [
-            {
-                _id: 1,
-                logo: pythonLogo,
-                alt: 'python'
-            },
-            {
-                _id: 2,
-                logo: awsLogo,
-                alt: 'aws'
-            }
+            technologies.python,
+            technologies.aws,
         ],
     },
     {
@@ -39,7 +29,7 @@ export const experienceData: WorkExperience[] = [
         companyName: 'Workday',
         companyLogo: {
             _id: 1,
-            logo: workdayLogo,
+            image: workdayLogo,
             alt: 'Workday'
         },
         jobTitle: 'Software Engineer',
@@ -47,16 +37,7 @@ export const experienceData: WorkExperience[] = [
         startDate: 'June 2021',
         endDate: 'December 2021',
         technologies: [
-            {
-                _id: 1,
-                logo: pythonLogo,
-                alt: 'python'
-            },
-            {
-                _id: 2,
-                logo: awsLogo,
-                alt: 'aws'
-            }
+            
         ],
     },
     {
@@ -64,7 +45,7 @@ export const experienceData: WorkExperience[] = [
         companyName: 'Volo',
         companyLogo: {
             _id: 1,
-            logo: voloLogo,
+            image: voloLogo,
             alt: 'Volo'
         },
         jobTitle: 'Software Engineer',
@@ -72,16 +53,7 @@ export const experienceData: WorkExperience[] = [
         startDate: 'April 2021',
         endDate: 'June 2021',
         technologies: [
-            {
-                _id: 1,
-                logo: pythonLogo,
-                alt: 'python'
-            },
-            {
-                _id: 2,
-                logo: awsLogo,
-                alt: 'aws'
-            }
+            
         ],
     },
     {
@@ -89,7 +61,7 @@ export const experienceData: WorkExperience[] = [
         companyName: 'General Assembly',
         companyLogo: {
             _id: 1,
-            logo: generalAssemblyLogo,
+            image: generalAssemblyLogo,
             alt: 'General Assembly'
         },
         jobTitle: 'Software Engineer Immersive Fellow',
@@ -97,16 +69,7 @@ export const experienceData: WorkExperience[] = [
         startDate: 'April 2021',
         endDate: 'June 2021',
         technologies: [
-            {
-                _id: 1,
-                logo: pythonLogo,
-                alt: 'python'
-            },
-            {
-                _id: 2,
-                logo: awsLogo,
-                alt: 'aws'
-            }
+            
         ],
     },
 ]

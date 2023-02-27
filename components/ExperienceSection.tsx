@@ -23,7 +23,7 @@ const Experience = ({ experiences }: Props) => {
             <h3 className='sectionTitle'>
                 Experience
             </h3>
-            <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#97D8C4]'>
+            <div className='w-full flex space-x-5 overflow-x-scroll p-6 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#97D8C4]'>
                 {
                     experiences.map((experience: WorkExperience) => {
                         return(

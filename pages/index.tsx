@@ -5,9 +5,9 @@ import Experience from '../components/ExperienceSection'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Projects from '../components/Projects'
-import Skills from '../components/SkillsSection'
+import SkillsSection from '../components/SkillsSection'
 import Footer from '../components/Footer'
-import { WorkExperience, Project} from '../typings'
+import { WorkExperience, Project, Logo } from '../typings'
 import { experienceData } from '../data/ExperiencesData'
 import { projectData } from '../data/ProjectsData'
 import { skillData } from '../data/SkillsData'
@@ -17,6 +17,7 @@ import { skillData } from '../data/SkillsData'
 type Props = {
     experiences: WorkExperience[];
     projects: Project[];
+    skills: Logo[];
 }
 
 
@@ -38,7 +39,7 @@ const Home = ({ experiences, projects }: Props) => {
                 <Experience experiences={experienceData}/>
             </section>
             <section id='skills' className='snap-start'>
-                <Skills skills={skillData}/>
+                <SkillsSection skills={skillData}/>
             </section>
             <section id='projects' className='snap-start'>
                 <Projects projects={projectData}/>

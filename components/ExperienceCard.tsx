@@ -10,7 +10,7 @@ type Props = {
 
 const ExperienceCard = ({ experience }: Props) => {
     return (
-        <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px]
+        <div className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px]
             md:w-[600px] xl:w-[900px] snap-center bg-[#6B9AC4] hover:opacity-100 opacity-40
             cursor-pointer transition-opacity duration-200 overflow-hidden'>
             <motion.img
@@ -32,7 +32,7 @@ const ExperienceCard = ({ experience }: Props) => {
             <Image
                 className='w-32 h-32 xl:w-[200px] xl:h-[200px] object-center'
                 key={experience.companyLogo._id}
-                src={experience.companyLogo.logo}
+                src={experience.companyLogo.image}
                 alt={experience.companyLogo.alt}
             />
             <div className='px-0 md:px-10'>
@@ -48,7 +48,7 @@ const ExperienceCard = ({ experience }: Props) => {
                             <Image
                                 className='h-16 w-16 rounded-full'
                                 key={technology._id}
-                                src={technology.logo}
+                                src={technology.image}
                                 alt={technology.alt}
                             />
                         )
@@ -60,12 +60,14 @@ const ExperienceCard = ({ experience }: Props) => {
                 <ul className='list-disc space-y-4 ml-5 text-lg max-h-80 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#6B9AC4]'>
                     {experience.jobDuties.map((duty) => {
                         return(
-                            <li>{duty}</li>
+                            <li key={duty}>
+                                {duty}
+                            </li>
                         )
                     })}
                 </ul>
             </div>
-        </article>
+        </div>
     )
 }
 
