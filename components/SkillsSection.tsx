@@ -23,18 +23,25 @@ const SkillsSection = ({ skills }: Props) => {
             <h3 className='absolute top-36 uppercase tracking-[20px] text-[#F4B942] text-2xl'>
                 Skills
             </h3>
-            <h3 className='absolute top-48 uppercase tracking-[3px] text-[#F4B942] text-sm opacity-60'>
-                Hover over a skill for amount of experience
-            </h3>
             <div className='grid grid-cols-4 gap-5'>
-                {skills.slice(0, skills.length / 2).map((skill) => {
+                {skills.slice(0, skills.length / 4).map((skill) => {
                     return(
                         <SkillIcon skill={skill} directionLeft={true}/>
                     )
                 })}
-                {skills.slice(skills.length / 2, skills.length).map((skill) => {
+                {skills.slice(skills.length / 4, skills.length / 2).map((skill) => {
+                    return(
+                        <SkillIcon skill={skill} directionLeft={false}/>
+                    )
+                })}
+                {skills.slice(skills.length / 2, skills.length * 0.75).map((skill) => {
                     return(
                         <SkillIcon skill={skill} directionLeft={true}/>
+                    )
+                })}
+                {skills.slice(skills.length * 0.75, skills.length).map((skill) => {
+                    return(
+                        <SkillIcon skill={skill} directionLeft={false}/>
                     )
                 })}
             </div>

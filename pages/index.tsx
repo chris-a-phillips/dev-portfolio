@@ -12,7 +12,6 @@ import { experienceData } from '../data/ExperiencesData'
 import { projectData } from '../data/ProjectsData'
 import { skillData } from '../data/SkillsData'
 
-// TODO: ADD OTHER TECHNOLOGIES
 // TODO: ADD PROJECTS
 // TODO: MAKE SURE ALL LINKS WORK
 // TODO: ADD RESUME LINK
