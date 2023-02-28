@@ -16,12 +16,19 @@ export const experienceData: WorkExperience[] = [
             alt: 'Built'
         },
         jobTitle: 'Software Engineer',
-        jobDuties: ['this', 'that', 'other'],
+        jobDuties: [
+            'Create ETO pipelines for data conversion with Python, MySQL and Docker images with client data',
+            'Utilize Python for onboarding and prop loading messy data and reports into a standardized format',
+            'Utilize AWS to merge files into SQL database and ensure platform and full suite of products can use data'
+        ],
         startDate: 'March 2022',
         endDate: 'current',
         technologies: [
             technologies.python,
             technologies.aws,
+            technologies.docker,
+            technologies.luigi,
+            technologies.pandas,
         ],
     },
     {
@@ -33,11 +40,17 @@ export const experienceData: WorkExperience[] = [
             alt: 'Workday'
         },
         jobTitle: 'Software Engineer',
-        jobDuties: ['this', 'that', 'other'],
+        jobDuties: [
+            'Utilize Java and its libraries in programming frameworks and adhere to object oriented principles',
+            'Employ specialized tools to create and improve web services using REST and SOAP protocol',
+            ' Employ agile methodologies in cross functional team with platforms like Jira, Crucible, Github, etc'
+        ],
         startDate: 'June 2021',
         endDate: 'December 2021',
         technologies: [
-            
+            technologies.java,
+            technologies.git,
+            technologies.jenkins,
         ],
     },
     {
@@ -49,11 +62,19 @@ export const experienceData: WorkExperience[] = [
             alt: 'Volo'
         },
         jobTitle: 'Software Engineer',
-        jobDuties: ['this', 'that', 'other'],
+        jobDuties: [
+            'Implemented frontend changes and various APIs to improve site usability and end user experience',
+            'Created MongoDB queries on the backend connected with GraphQL',
+            'Utilized React as a framework in combination with Node.js, Mongoose, and Express MVC'
+        ],
         startDate: 'April 2021',
         endDate: 'June 2021',
         technologies: [
-            
+            technologies.reactjs,
+            technologies.mongodb,
+            technologies.graphql,
+            technologies.mongoose,
+            technologies.express,
         ],
     },
     {
@@ -65,11 +86,19 @@ export const experienceData: WorkExperience[] = [
             alt: 'General Assembly'
         },
         jobTitle: 'Software Engineer Immersive Fellow',
-        jobDuties: ['this', 'that', 'other'],
+        jobDuties: [
+            'Three-month, 420-hour full-time and full-stack program conducted in a remote setting',
+            'Gained experience with the latest front-end and back-end programming languages, tools, and methodologies',
+            'Created Code Finesse Github organization to help new engineers learn fundamentals'
+        ],
         startDate: 'April 2021',
         endDate: 'June 2021',
         technologies: [
-            
+            technologies.javascript,
+            technologies.reactjs,
+            technologies.python,
+            technologies.django,
+            technologies.jest,
         ],
     },
 ]
