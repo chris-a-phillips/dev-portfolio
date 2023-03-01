@@ -4,6 +4,7 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 import FullName from './FullName';
 import { motion } from 'framer-motion'
+import headshotImage from 'public/static/headshot.jpeg'
 
 
 type Props = {}
@@ -33,6 +34,7 @@ const Hero = (props: Props) => {
             <img
             className='relative rounded-full h-32 w-32 mx-auto object-cover'
             src='https://cphillips.dev/static/media/headshot.5e7823ea.jpeg'
+            alt='Chris Phillips headshot'
             />
             <div className='z-20'>
                 <h2>
