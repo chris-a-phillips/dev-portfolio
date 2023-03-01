@@ -21,10 +21,14 @@ export interface WorkExperience {
 export interface Project {
     _id: number;
     projectName: string;
+    projectImage: {
+        imageUrl: string;
+        alt: string;
+    };
     description: string;
-    deployedUrl: string;
-    githubLink: string;
-    technologies: Image;
+    deployedUrl: string?;
+    githubLink: string?;
+    technologies: Logo[];
 }
 
 export interface Technologies {

@@ -1,9 +1,9 @@
 import { WorkExperience } from "../typings"
 import { technologies } from "./TechnologiesData"
-import builtLogo from '../public/static/built-icon.svg'
-import workdayLogo from '../public/static/workday-icon.svg'
-import voloLogo from '../public/static/volo-icon.svg'
-import generalAssemblyLogo from '../public/static/general-assembly-icon.svg'
+import builtLogo from '../public/static/company_logos/built-logo.svg'
+import workdayLogo from '../public/static/company_logos/workday-logo.svg'
+import voloLogo from '../public/static/company_logos/volo-logo.svg'
+import generalAssemblyLogo from '../public/static/company_logos/general-assembly-logo.svg'
 
 
 export const experienceData: WorkExperience[] = [
@@ -50,6 +50,7 @@ export const experienceData: WorkExperience[] = [
         technologies: [
             technologies.java,
             technologies.git,
+            technologies.postman,
             technologies.jenkins,
         ],
     },
