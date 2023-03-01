@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
+import { FaWpforms } from 'react-icons/fa';
 import { BsLinkedin } from 'react-icons/bs';
 import { motion } from 'framer-motion'
 import Link from 'next/link';
@@ -24,8 +25,17 @@ const Header = (props: Props) => {
                     duration: 1.5
                 }}
                 className='flex flex-row space-x-6 items-center'>
-                    <AiFillGithub />
-                    <BsLinkedin />
+                    <Link
+                        target='_blank'
+                        href='https://github.com/chris-a-phillips'>
+                        <AiFillGithub/>
+                    </Link>
+                    <Link
+                        target='_blank'
+                        href='https://www.linkedin.com/in/chris-a-phillips/'>
+                        <BsLinkedin/>
+                    </Link>
+                    <FaWpforms />
             </motion.div>
             <Link
                 href='#contact'>

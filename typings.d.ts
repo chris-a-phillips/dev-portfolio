@@ -26,7 +26,7 @@ export interface Project {
         alt: string;
     };
     description: string;
-    deployedUrl: string?;
+    deployedUrl: string;
     githubLink: string?;
     technologies: Logo[];
 }

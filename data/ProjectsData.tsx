@@ -10,11 +10,14 @@ export const projectData: Project[] = [
             imageUrl: '',
             alt: ''
         },
-        description: '',
+        description: 'Track how your team is feeling mentally, physically, and emotionally',
         deployedUrl: '',
-        githubLink: '',
+        githubLink: 'https://github.com/chris-a-phillips/human-principle-frontend',
         technologies: [
+            technologies.python,
+            technologies.django,
             technologies.javascript,
+            technologies.reactjs,
         ],
     },
     {
@@ -24,11 +27,13 @@ export const projectData: Project[] = [
             imageUrl: '',
             alt: ''
         },
-        description: '',
+        description: 'A card game in which the player will face randomly generated units.',
         deployedUrl: '',
-        githubLink: '',
+        githubLink: 'https://github.com/chris-a-phillips/enter-the-faang',
         technologies: [
             technologies.javascript,
+            technologies.reactjs,
+            technologies.bootstrap,
         ],
     },
     {
@@ -38,10 +43,13 @@ export const projectData: Project[] = [
             imageUrl: '',
             alt: ''
         },
-        description: '',
+        description: 'Choose your next gift and add it to your favorites with this gift guide app',
         deployedUrl: '',
-        githubLink: '',
+        githubLink: 'https://github.com/anonymous-animals/gitwrap-frontend',
         technologies: [
+            technologies.mongoose,
+            technologies.reactjs,
+            technologies.node,
             technologies.javascript,
         ],
     },
@@ -52,10 +60,11 @@ export const projectData: Project[] = [
             imageUrl: '',
             alt: ''
         },
-        description: '',
+        description: 'Find information about the next city you\'re thinking of moving to all across the world',
         deployedUrl: '',
-        githubLink: '',
+        githubLink: 'https://github.com/chris-a-phillips/relocate-me',
         technologies: [
+            technologies.reactjs,
             technologies.javascript,
         ],
     },

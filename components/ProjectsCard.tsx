@@ -3,6 +3,8 @@ import { FaGithubSquare, FaGlobe } from 'react-icons/fa';
 import { motion } from 'framer-motion'
 import { Project } from '../typings'
 import Image from 'next/image'
+import Link from 'next/link';
+
 
 
 type Props = {
@@ -53,10 +55,18 @@ const ProjectsCard = ({ project }: Props) => {
                 </p>
                 <div className='flex flex-row space-x-4 items-center'>
                     {project.githubLink ?
-                    <FaGithubSquare />
+                        <Link
+                            target='_blank'
+                            href={project.githubLink}>
+                            <FaGithubSquare />
+                        </Link>
                     : null}
                     {project.deployedUrl ?
-                    <FaGlobe />
+                        <Link
+                            target='_blank'
+                            href={project.deployedUrl}>
+                            <FaGlobe />
+                        </Link>
                     : null}
                 </div>
                 </div>
