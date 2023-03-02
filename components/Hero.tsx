@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
@@ -32,7 +33,9 @@ const Hero = (props: Props) => {
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
-            <img
+            <Image
+            height={70}
+            width={70}
             className='relative rounded-full h-32 w-32 mx-auto object-cover'
             src={headshotImage.src}
             alt='Chris Phillips headshot'
@@ -60,7 +63,6 @@ const Hero = (props: Props) => {
                                 <Cursor cursorColor='#F4B942' cursorStyle='▋'/>
                             </motion.div>
                         </span>
-
                     ) : <span className='text-sky-800'>placeholder</span>}
                 </h1>
                 <div className='pt-5'>

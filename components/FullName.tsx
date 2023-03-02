@@ -12,6 +12,7 @@ const SoftwareEngineer = (props: Props) => {
             {firstName.map((letter, index) => {
                 return(
                     <motion.div
+                        key={index}
                         initial={{
                             x: Math.random()*1000,
                             y: Math.random()*1000,
@@ -38,6 +39,7 @@ const SoftwareEngineer = (props: Props) => {
             {lastName.map((letter, index) => {
                 return(
                     <motion.div
+                        key={index}
                         initial={{
                             x: Math.random()*1000,
                             y: Math.random()*1000,

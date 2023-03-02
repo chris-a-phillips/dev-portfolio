@@ -22,11 +22,11 @@ const Contact = (props: Props) => {
         <h3 className="sectionTitle">Contact</h3>
         <div className="flex flex-col space-y-10">
             <h4 className="text-5xl font-semibold text-center underline decoration-[#97D8C4]">
-            Let's Talk
+            Lets Talk
             </h4>
             <p className="text-2xl text-center">
-            I'm always looking for new opportunities and ways to collaborate.
-            Whether it's just a casual hello, a question, or anything else, I'll
+            I am always looking for new opportunities and ways to collaborate.
+            Whether it is just a casual hello, a question, or anything else, I will
             make sure to get back to you.
             </p>
             <div className="space-y-5">
