@@ -21,13 +21,15 @@ const Projects = ({ projects }: Props) => {
                 duration: 1.5
             }}
             className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-            <h3 className='absolute top-36 uppercase tracking-[20px] text-[#F4B942] text-2xl'>
+            <h3 className='absolute top-28 uppercase tracking-[20px] text-[#F4B942] text-2xl'>
                 Projects
             </h3>
             <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#97D8C4]'>
                 {projects.map((project) => {
                     return(
-                        <ProjectsCard project={project}/>
+                        <div key={project._id}>
+                            <ProjectsCard project={project}/>
+                        </div>
                     )
                 })}
             </div>

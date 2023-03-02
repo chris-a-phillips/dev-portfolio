@@ -24,24 +24,32 @@ const SkillsSection = ({ skills }: Props) => {
                 Skills
             </h3>
             <div className='grid grid-cols-4 gap-5'>
-                {skills.slice(0, skills.length / 4).map((skill) => {
+                {skills.slice(0, 4).map((skill) => {
                     return(
-                        <SkillIcon skill={skill} directionLeft={true}/>
+                        <div key={0}>
+                            <SkillIcon skill={skill} directionLeft={true}/>
+                        </div>
                     )
                 })}
-                {skills.slice(skills.length / 4, skills.length / 2).map((skill) => {
+                {skills.slice(4, 8).map((skill) => {
                     return(
-                        <SkillIcon skill={skill} directionLeft={false}/>
+                        <div key={1}>
+                            <SkillIcon skill={skill} directionLeft={false}/>
+                        </div>
                     )
                 })}
-                {skills.slice(skills.length / 2, skills.length * 0.75).map((skill) => {
+                {skills.slice(8, 12).map((skill) => {
                     return(
-                        <SkillIcon skill={skill} directionLeft={true}/>
+                        <div key={2}>
+                            <SkillIcon skill={skill} directionLeft={true}/>
+                        </div>
                     )
                 })}
-                {skills.slice(skills.length * 0.75, skills.length).map((skill) => {
+                {skills.slice(12, 16).map((skill) => {
                     return(
-                        <SkillIcon skill={skill} directionLeft={false}/>
+                        <div key={3}>
+                            <SkillIcon skill={skill} directionLeft={false}/>
+                        </div>
                     )
                 })}
             </div>

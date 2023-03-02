@@ -13,9 +13,10 @@ const Hero = (props: Props) => {
     const [delay, setDelay] = useState(false)
     const [text] = useTypewriter({
         words: [
-            'adjective 1',
-            'adjective 2',
-            'adjective 3',
+            'Art Creator',
+            'softwareEngineer',
+            'data_engineer',
+            'GameDeveloper',
         ],
         loop: true,
         delaySpeed: 1500
@@ -33,7 +34,7 @@ const Hero = (props: Props) => {
             <BackgroundCircles />
             <img
             className='relative rounded-full h-32 w-32 mx-auto object-cover'
-            src='https://cphillips.dev/static/media/headshot.5e7823ea.jpeg'
+            src={headshotImage.src}
             alt='Chris Phillips headshot'
             />
             <div className='z-20'>

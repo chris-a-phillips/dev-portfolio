@@ -1,5 +1,6 @@
 import { IconType } from "react-icons";
 
+
 export interface Logo {
     _id: number;
     image: HTMLImageElement;

@@ -4,6 +4,7 @@ import { FaWpforms } from 'react-icons/fa';
 import { BsLinkedin } from 'react-icons/bs';
 import { motion } from 'framer-motion'
 import Link from 'next/link';
+// import Pdf from '../public/static/Chris Phillips Resume.pdf'
 
 type Props = {}
 
@@ -33,9 +34,16 @@ const Header = (props: Props) => {
                     <Link
                         target='_blank'
                         href='https://www.linkedin.com/in/chris-a-phillips/'>
-                        <BsLinkedin/>
+                        <BsLinkedin
+                        />
                     </Link>
-                    <FaWpforms />
+                    {/* <Link
+                        href={Pdf}
+                        target='_blank'
+                        // locale={false}
+                        >
+                        <FaWpforms />
+                    </Link> */}
             </motion.div>
             <Link
                 href='#contact'>

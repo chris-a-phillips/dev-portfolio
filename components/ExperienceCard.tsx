@@ -10,7 +10,7 @@ type Props = {
 
 const ExperienceCard = ({ experience }: Props) => {
     return (
-        <div className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px]
+        <div className='flex flex-col rounded-lg items-center space-y-8 flex-shrink-0 w-[500px]
             md:w-[600px] xl:w-[900px] snap-center bg-[#6B9AC4] hover:opacity-100 opacity-40
             cursor-pointer transition-opacity duration-200 overflow-hidden'>
             <motion.img
@@ -30,7 +30,7 @@ const ExperienceCard = ({ experience }: Props) => {
             }}
             />
             <Image
-                className='w-32 h-32 xl:w-[200px] xl:h-[200px] object-center'
+                className='w-32 h-24 xl:w-[200px] xl:h-[140px] object-center'
                 key={experience.companyLogo._id}
                 src={experience.companyLogo.image}
                 alt={experience.companyLogo.alt}
@@ -45,12 +45,13 @@ const ExperienceCard = ({ experience }: Props) => {
                 <div className='flex space-x-2 my-2'>
                     {experience.technologies.map((technology) => {
                         return(
-                            <Image
-                                className='h-16 w-16 rounded-full'
-                                key={technology._id}
-                                src={technology.image}
-                                alt={technology.alt}
-                            />
+                            <div key={technology._id}>
+                                <Image
+                                    className='h-16 w-16 rounded-full'
+                                    src={technology.image}
+                                    alt={technology.alt}
+                                    />
+                            </div>
                         )
                     })}
                 </div>

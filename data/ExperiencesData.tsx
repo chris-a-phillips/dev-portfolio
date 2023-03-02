@@ -42,7 +42,7 @@ export const experienceData: WorkExperience[] = [
         jobTitle: 'Software Engineer',
         jobDuties: [
             'Utilize Java and its libraries in programming frameworks and adhere to object oriented principles',
-            'Employ specialized tools to create and improve web services using REST and SOAP protocol',
+            'Employ specialized tools to create and improve web services using REST and SOAP protocol B2B integrations',
             ' Employ agile methodologies in cross functional team with platforms like Jira, Crucible, Github, etc'
         ],
         startDate: 'June 2021',
@@ -66,7 +66,7 @@ export const experienceData: WorkExperience[] = [
         jobDuties: [
             'Implemented frontend changes and various APIs to improve site usability and end user experience',
             'Created MongoDB queries on the backend connected with GraphQL',
-            'Utilized React as a framework in combination with Node.js, Mongoose, and Express MVC'
+            'Utilized React as a framework in combination with Node.js, Mongoose, Express MVC, and Google Maps API'
         ],
         startDate: 'April 2021',
         endDate: 'June 2021',

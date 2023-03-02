@@ -33,18 +33,19 @@ const ProjectsCard = ({ project }: Props) => {
                     viewport={{
                         once: true
                     }}
-                    src=''
+                    src={project.projectImage.imageUrl}
                     alt=''
                 />
                 <div className='flex space-x-2 my-2'>
                     {project.technologies.map((technology) => {
                         return(
-                            <Image
-                                className='h-10 w-10 rounded-full'
-                                key={technology._id}
-                                src={technology.image}
-                                alt={technology.alt}
-                            />
+                            <div key={technology._id}>
+                                <Image
+                                    className='h-10 w-10 rounded-full'
+                                    src={technology.image}
+                                    alt={technology.alt}
+                                />
+                            </div>
                         )
                     })}
                 </div>
