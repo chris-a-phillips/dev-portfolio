@@ -1,6 +1,6 @@
-# Description
+<img width="1557" alt="Screenshot 2023-03-01 at 20 04 51" src="https://user-images.githubusercontent.com/69214740/222328391-b1e32ddc-ca43-436e-9b13-bd4796df4bdb.png">
 
-This is my personal portfolio created with React Next JS and published through Netlify.
+This is my personal portfolio built with React Next JS and published through Netlify. 🌎 PUBLISHED 🌎
 
  *If you noticed a bug please let me know  👉  [HERE](https://github.com/chris-a-phillips/dev-portfolio/issues)*
 
