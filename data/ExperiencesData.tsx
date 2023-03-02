@@ -1,9 +1,5 @@
 import { WorkExperience } from "../typings"
 import { technologies } from "./TechnologiesData"
-import builtLogo from '../public/static/company_logos/built-logo.svg'
-import workdayLogo from '../public/static/company_logos/workday-logo.svg'
-import voloLogo from '../public/static/company_logos/volo-logo.svg'
-import generalAssemblyLogo from '../public/static/company_logos/general-assembly-logo.svg'
 
 
 export const experienceData: WorkExperience[] = [
@@ -12,7 +8,7 @@ export const experienceData: WorkExperience[] = [
         companyName: 'Built Technologies',
         companyLogo: {
             _id: 1,
-            image: builtLogo,
+            image: '/built-logo.svg',
             alt: 'Built'
         },
         jobTitle: 'Software Engineer',
@@ -36,7 +32,7 @@ export const experienceData: WorkExperience[] = [
         companyName: 'Workday',
         companyLogo: {
             _id: 1,
-            image: workdayLogo,
+            image: '/workday-logo.svg',
             alt: 'Workday'
         },
         jobTitle: 'Software Engineer',
@@ -59,7 +55,7 @@ export const experienceData: WorkExperience[] = [
         companyName: 'Volo',
         companyLogo: {
             _id: 1,
-            image: voloLogo,
+            image: '/volo-logo.svg',
             alt: 'Volo'
         },
         jobTitle: 'Software Engineer',
@@ -83,7 +79,7 @@ export const experienceData: WorkExperience[] = [
         companyName: 'General Assembly',
         companyLogo: {
             _id: 1,
-            image: generalAssemblyLogo,
+            image: '/general-assembly-logo.svg',
             alt: 'General Assembly'
         },
         jobTitle: 'Software Engineer Immersive Fellow',

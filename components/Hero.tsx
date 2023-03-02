@@ -5,8 +5,6 @@ import { motion } from 'framer-motion'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 import FullName from './FullName';
-import headshotImage from 'public/static/headshot.jpeg'
-
 
 type Props = {}
 
@@ -37,7 +35,7 @@ const Hero = (props: Props) => {
             height={70}
             width={70}
             className='relative rounded-full h-32 w-32 mx-auto object-cover'
-            src={headshotImage.src}
+            src='/headshot.jpeg'
             alt='Chris Phillips headshot'
             />
             <div className='z-20'>

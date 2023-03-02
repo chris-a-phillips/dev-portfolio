@@ -25,6 +25,8 @@ const SkillIcon = ({ skill, directionLeft }: Props) => {
         className='rounded-lg object-cover h-24 w-24 md:w-28 md:h-28 xl:w032 xl:h-32 filter group-hover:brightness-150 transition duration-300 ease-in-out'
         >
             <Image
+                width={70}
+                height={70}
                 key={skill._id}
                 src={skill.image}
                 alt={skill.alt}

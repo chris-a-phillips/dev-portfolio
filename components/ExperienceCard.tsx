@@ -31,10 +31,12 @@ const ExperienceCard = ({ experience }: Props) => {
             />
             <Image
                 className='w-32 h-24 xl:w-[200px] xl:h-[140px] object-center'
+                width={70}
+                height={70}
                 key={experience.companyLogo._id}
                 src={experience.companyLogo.image}
                 alt={experience.companyLogo.alt}
-            />
+                />
             <div className='px-0 md:px-10'>
                 <h4 className='text-4-xl font-light'>
                     {experience.jobTitle}
@@ -47,6 +49,8 @@ const ExperienceCard = ({ experience }: Props) => {
                         return(
                             <div key={technology._id}>
                                 <Image
+                                    width={70}
+                                    height={70}
                                     className='h-16 w-16 rounded-full'
                                     src={technology.image}
                                     alt={technology.alt}

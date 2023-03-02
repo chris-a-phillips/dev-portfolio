@@ -42,6 +42,8 @@ const ProjectsCard = ({ project }: Props) => {
                             return(
                                 <div key={technology._id}>
                                     <Image
+                                        width={70}
+                                        height={70}
                                         className='h-10 w-10 rounded-full'
                                         src={technology.image}
                                         alt={technology.alt}
