@@ -1,10 +1,8 @@
 import React from 'react'
+import Link from 'next/link';
 import { AiFillGithub, AiOutlineMail } from 'react-icons/ai';
-import { FaWpforms } from 'react-icons/fa';
 import { BsLinkedin } from 'react-icons/bs';
 import { motion } from 'framer-motion'
-import Link from 'next/link';
-// import Pdf from '../public/static/Chris Phillips Resume.pdf'
 
 type Props = {}
 
@@ -37,13 +35,6 @@ const Header = (props: Props) => {
                         <BsLinkedin
                         />
                     </Link>
-                    {/* <Link
-                        href={Pdf}
-                        target='_blank'
-                        // locale={false}
-                        >
-                        <FaWpforms />
-                    </Link> */}
             </motion.div>
             <Link
                 href='#contact'>

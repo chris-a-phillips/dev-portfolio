@@ -12,11 +12,6 @@ import { experienceData } from '../data/ExperiencesData'
 import { projectData } from '../data/ProjectsData'
 import { skillData } from '../data/SkillsData'
 
-// TODO: FIX SECTION HEADER STYLING (THEY NEED TO BE LOWERED AND NOT IN SAME LEVEL AS HEADER LINK)
-// TODO: FIX SIZE OF PROJECT SCREENSHOTS
-// TODO: FIX SIZE OF GITHUB LINKS
-// TODO: 
-// TODO: FIX MEDIA QUERY STYLING
 
 type Props = {
     experiences: WorkExperience[];

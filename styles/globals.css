@@ -8,7 +8,7 @@
         tracking-widest text-[#F4B942] transition-all hover:border-[#97D8C4]/40 hover:text-[#F4B942]/40
     }
     .sectionTitle {
-        @apply absolute top-24 uppercase tracking-[20px] text-[#F4B942] text-2xl
+        @apply absolute top-20 uppercase tracking-[20px] text-[#F4B942] text-2xl
     }
     .contactInput {
         @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424]

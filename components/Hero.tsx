@@ -1,9 +1,9 @@
-import Link from 'next/link';
 import React, { useState } from 'react'
+import Link from 'next/link';
+import { motion } from 'framer-motion'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 import FullName from './FullName';
-import { motion } from 'framer-motion'
 import headshotImage from 'public/static/headshot.jpeg'
 
 

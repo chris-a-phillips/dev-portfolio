@@ -1,6 +1,6 @@
 import React from 'react';
-import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import Link from 'next/link'
+import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 
 
 const Footer = () => {
