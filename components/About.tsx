@@ -33,7 +33,7 @@ const About = (props: Props) => {
                     opacity: 1
                 }}
                 className='mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'
-                src='https://cphillips.dev/static/media/headshot.5e7823ea.jpeg'
+                src='/headshot.jpeg'
             />
             <div className='space-y-10 px-0 md:px-10'>
                 <h4 className='text-4xl font-semibold'>
